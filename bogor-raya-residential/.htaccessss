@@ -1,0 +1,33 @@
+<!-- # Lindungi semua folder dan file sensitif
+Options All -Indexes
+
+# Izinkan akses ke file-file publik
+<FilesMatch "^(index|about|np|contact|gallery|project)\.(php|html)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Batasi akses ke halaman login berdasarkan IP
+<Files "login.php">
+    Order Deny,Allow
+    Deny from all
+    Allow from 10.1.2.219
+</Files>
+
+<Files "dashboard.php">
+    Order Deny,Allow
+    Deny from all
+    Allow from 10.1.2.219
+</Files>
+
+# Redirect ke homepage jika error
+ErrorDocument 401 /bogor-raya-residential/
+ErrorDocument 403 /bogor-raya-residential/
+ErrorDocument 404 /bogor-raya-residential/
+ErrorDocument 500 /bogor-raya-residential/
+
+# Lindungi file sensitif lainnya
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|log|sh)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch> -->

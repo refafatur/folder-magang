@@ -1,0 +1,5 @@
+# Menolak akses langsung ke semua file di folder assets
+<FilesMatch ".*">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

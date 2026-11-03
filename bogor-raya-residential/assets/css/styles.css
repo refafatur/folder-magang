@@ -1,0 +1,161 @@
+:root {
+    --primary: #28a745;
+    --secondary: #343a40;
+    --light: #f8f9fa;
+    --dark: #1a1a1a;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 70px; /* Height of your fixed navbar */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background: rgba(26, 26, 26, 0.95) !important;
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    min-height: 100vh;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    padding: 150px 0;
+  }
+  
+  .hero-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 2rem;
+  }
+  
+  /* Section Styling */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    transition: width 0.3s;
+  }
+  
+  .section-title:hover::after {
+    width: 120px;
+  }
+  
+  /* Product Cards */
+  .product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  }
+  
+  .product-img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .product-content {
+    padding: 25px;
+    background: white;
+  }
+  
+  /* Features Section */
+  .feature-box {
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    background: var(--dark);
+    color: white;
+    padding: 80px 0 30px;
+  }
+  
+  .social-links a {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: all 0.3s;
+  }
+  
+  .social-links a:hover {
+    transform: translateY(-3px) rotate(360deg);
+    background: #218838;
+  }
+  
+  /* Animations */
+  .animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  .animate-up.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  section {
+    min-height: 100vh;
+    padding-top: 70px; /* Match navbar height */
+  }
+
+
+  

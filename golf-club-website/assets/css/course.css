@@ -1,0 +1,165 @@
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+}
+
+.course-container {
+    padding: 4rem 0;
+    background: #f8fafc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.course-intro {
+    text-align: left;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #4a5568;
+    max-width: 800px;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.course-highlights h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.course-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+.hole-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.hole-number {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c5282;
+}
+
+.tree-type {
+    font-size: 0.9rem;
+    color: #718096;
+    font-style: italic;
+}
+
+.hole-par {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c5282;
+}
+
+.hole-description {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.hole-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1rem;
+}
+
+.action-btn {
+    text-decoration: none;
+    color: #2c5282;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.action-btn:hover {
+    color: #1a365d;
+}
+
+.divider {
+    color: #cbd5e0;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .course-card {
+        margin-bottom: 1.5rem;
+    }
+}

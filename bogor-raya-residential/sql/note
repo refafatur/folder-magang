@@ -1,0 +1,16 @@
+kalau 4 view masih pada rusak 
+-- View untuk total berita
+CREATE VIEW view_total_news AS
+SELECT COUNT(*) AS jumlah_news FROM tbl_news;
+
+-- View untuk total produk
+CREATE VIEW view_total_produk AS
+SELECT COUNT(*) AS jumlah_produk FROM tbl_produk;
+
+-- View untuk total pengguna
+CREATE VIEW view_total_users AS
+SELECT COUNT(*) AS jumlah_users FROM tbl_users;
+
+-- View untuk total pemesanan
+CREATE VIEW view_total_pemesanan AS
+SELECT COUNT(*) AS jumlah_pemesan FROM tbl_contacts;
